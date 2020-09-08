@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+void swap (int &x1, int &x2) {
+int t;
+t = x1;
+x1 = x2;
+x2 = t;
+}
+int main()
+{
+    int a = 69, b = 96;
+    cout << "Ennen vaihtoa" << endl;
+    cout << "a = " << a << endl;
+    cout << "b = " << b << endl;
+
+    swap (a, b);
+
+    cout << "Vaihtamisen jälkeen" << endl;
+    cout << "a = " << a << endl;
+    cout << "b = " << b << endl;
+    return 0;
+}
